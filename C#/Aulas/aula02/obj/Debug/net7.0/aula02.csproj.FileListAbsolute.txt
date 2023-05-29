@@ -1,0 +1,5 @@
+C:\Users\EPD\Documents\estudo\C#\Aulas\aula02\obj\Debug\net7.0\aula02.csproj.AssemblyReference.cache
+C:\Users\EPD\Documents\estudo\C#\Aulas\aula02\obj\Debug\net7.0\aula02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EPD\Documents\estudo\C#\Aulas\aula02\obj\Debug\net7.0\aula02.AssemblyInfoInputs.cache
+C:\Users\EPD\Documents\estudo\C#\Aulas\aula02\obj\Debug\net7.0\aula02.AssemblyInfo.cs
+C:\Users\EPD\Documents\estudo\C#\Aulas\aula02\obj\Debug\net7.0\aula02.csproj.CoreCompileInputs.cache
