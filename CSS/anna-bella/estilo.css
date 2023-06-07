@@ -1,0 +1,14 @@
+.fundo{
+    background-image: url('imagens/fundo.png');
+}
+.link{
+    text-decoration: none;
+    color: #525464
+}
+.tabela{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #C4C5B0;
+    border-collapse: collapse;
+}
