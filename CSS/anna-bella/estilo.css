@@ -3,12 +3,26 @@
 }
 .link{
     text-decoration: none;
-    color: #525464
+    color: #4e547c;
+    text-align: left;
 }
-.tabela{
+.tabela1{
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-size:small;
     background-color: #C4C5B0;
     border-collapse: collapse;
+    border-spacing: 0;
+}
+#cabecalho{
+    height: 2cm;
+    width: 40%;
+}
+
+.tabela2{
+    background-color:beige;
+}
+#h1{
+    color:rgb(182, 172, 113)
 }
