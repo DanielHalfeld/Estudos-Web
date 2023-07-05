@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 1em;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+a{
+    font: bold;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.cabecalho1{
+    background: #F2B80C;
+    padding: 40px;
+    text-align: center;
+    width: auto;
+}
+
+#cabecalho2{
+    padding: 10px;
+}
+
+#titulo1{
+    color: #535052;
+    display: inline;
+}
+#titulo2{
+    color: white;
+    display: inline;
+}
