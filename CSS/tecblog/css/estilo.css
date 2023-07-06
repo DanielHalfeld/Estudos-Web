@@ -9,28 +9,33 @@ body{
     background: #e6e6e6;
 }
 
-a{
+a:link, a:visited{
     font: bold;
     text-decoration: none;
     color: white;
-    padding: 5px;
+    padding: 8px;
 }
-.cabecalho1{
+
+a:hover{
+    background: white;
+    color: #F2B80C;
+}
+#cabecalho{
     background: #F2B80C;
-    padding: 40px;
+    padding: 15px;
     text-align: center;
     width: auto;
 }
 
-#cabecalho2{
+#logo, #menu{
     padding: 10px;
 }
 
-#titulo1{
-    color: #535052;
-    display: inline;
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
 }
-#titulo2{
+
+.branco{
     color: white;
-    display: inline;
 }
