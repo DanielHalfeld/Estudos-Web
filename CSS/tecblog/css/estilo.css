@@ -62,14 +62,24 @@ h1{
     float: right;
 }
 
+#rodape{
+    clear: both;
+    padding: 15px;
+    text-align: center;
+    background: #CCC;
+}
+
 h3{
     background: #CECACE;
     color: #555456;
 }
 
-.ler{
+a.ler:link, a.ler:visited, a.ler:hover{
     text-decoration: none;
     color: #F2B80C;
+    background: none;
+    display: block;
+    padding: 0px;
 }
 
 .linha{
