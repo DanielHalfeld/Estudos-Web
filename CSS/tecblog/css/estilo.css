@@ -7,7 +7,6 @@ body{
     font-size: 1em;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     background: #e6e6e6;
-    display: inline;
 }
 
 a:link, a:visited{
@@ -21,6 +20,21 @@ a:hover{
     background: white;
     color: #F2B80C;
 }
+
+a.ler:link,
+a.ler:visited,
+a.ler:hover {
+    text-decoration: none;
+    color: #F2B80C;
+    background: none;
+    display: block;
+    padding: 0px;
+}
+
+a.ler:hover {
+    text-decoration: underline;
+}
+
 #cabecalho{
     background: #F2B80C;
     padding: 15px;
@@ -32,36 +46,33 @@ a:hover{
     padding: 10px;
 }
 
-h1{
-    color: #4e4e4e;
-    font-size: 2.5em;
-}
-
-.branco{
-    color: white;
-}
-
-.laranja{
-    color: #F2B80C;
-}
-
 #principal{
-    width: 1100px;
-    margin: 20px auto;
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
 }
-#conteudo, #lateral{
-    background: white;
-    padding: 10px;
-}
-#conteudo{
+
+#esquerda{
     width: 660px;
     float: left;
 }
-#lateral{
+
+.postesq{
+    padding: 20px;
+    margin-bottom: 20px;
     background: white;
+}
+
+#direita{
+    width: 240px;
     float: right;
 }
 
+.postdir{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 #rodape{
     clear: both;
     padding: 15px;
@@ -69,22 +80,35 @@ h1{
     background: #CCC;
 }
 
+.postlat{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #CCC;
+}
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+h2{
+    color: #F2B80C;
+}
+
 h3{
     background: #CECACE;
     color: #555456;
+    padding: 5px;
 }
 
-a.ler:link, a.ler:visited, a.ler:hover{
-    text-decoration: none;
-    color: #F2B80C;
-    background: none;
+.data{
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     display: block;
-    padding: 0px;
 }
 
-.linha{
-    display: inline;
-}
-.bloco{
-    display: block;
+.branco {
+    color: white;
 }
