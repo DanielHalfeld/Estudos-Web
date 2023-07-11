@@ -5,12 +5,17 @@ function calcularMelhorPreco() {
     if (precoAlcool != "" && precoGasolina != "") {
 
         let resultado = document.getElementById("resultado");
+        // ou os caracteres dentro de resultado podem ser definidos direto através dos comandos dentro dos IF's:
         let valor = precoAlcool / precoGasolina;
 
         if (valor >= 0.7) {
-            resultado.textContent = "Gasolina";
+          resultado.textContent = "Gasolina";
+          // document.getElementById("resultado").innerHTML = "Gasolina"
+          
         } else {
-            resultado.textContent = "Álcool";
+          resultado.textContent = "Álcool";
+          // document.getElementById("resultado").innerHTML = "Álcool"
+          
         }
     } 
     else {
