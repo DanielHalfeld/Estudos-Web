@@ -1,28 +1,19 @@
 function calcularMelhorPreco() {
+    let precoAlcool = document.getElementById("alcool").value;
+    let precoGasolina = document.getElementById("gasolina").value;
 
-    let precoAlcool = document.getElementById("alcool").value
-    let precoGasolina = document.getElementById("gasolina").value;    
-    
-    if( precoAlcool != "" && precoGasolina != ""){
+    if (precoAlcool != "" && precoGasolina != "") {
 
-        let resultado = document.getElementById("resultado")
+        let resultado = document.getElementById("resultado");
+        let valor = precoAlcool / precoGasolina;
 
-        resultado = (precoAlcool/precoGasolina)
-
-        if(resultado >= 0.7){
-
-            resultado = "Gasolina"
-
-        }else{
-
-            resultado = "Álcool"
-
+        if (valor >= 0.7) {
+            resultado.textContent = "Gasolina";
+        } else {
+            resultado.textContent = "Álcool";
         }
-    }else{
-        alert("Preencha o preço dos dois!")
+    } 
+    else {
+        alert("Preencha o preço dos dois!");
     }
-
 }
-        
-
-
