@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+#box-sizing{
+    background: grey;
+    text-align: center;
+    text-decoration: solid;
+    width: 900px;
+    padding: 20px;
+}
+
+#box-left{
+    background: black;
+    width: 300px;
+    float: left;
+}
+
+#box-right{
+    background: white;
+    float: right;
+    width: 200px;
+}
