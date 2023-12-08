@@ -1,0 +1,64 @@
+/*
+Seletor universal
+
+* {
+    border: 1px solid red;
+}
+
+
+Seletor de texto
+
+
+ h1 {
+    color: rgb(235, 44, 44)
+ }
+ */
+
+ /*
+ Seletor de classe
+ */
+
+ .verde{
+    color: lightgreen;
+ }
+/*
+Adiciona um seletor de classe apenas para dentro do elemento <p>
+*/
+ p.verde{
+    color: green;
+ }
+
+ /* 
+ Seletor de ID
+ */
+
+ #cabecalho {
+    border: 1px solid blue;
+ }
+
+ /* Seletor de filho */
+ li>a {
+    color: red;
+    text-decoration: none;
+ }
+
+ div>span {
+    text-transform: capitalize;
+ }
+
+ /* Seletor de descendente */
+ div a{
+    color:blue;
+    /* Todos elementos <a> que derivam do pai <div> serão modificados */
+ }
+
+ /* Seletor de irmão adjascente */
+ h1+p{
+    color: red;
+ }
+ 
+ /* Seletor de irmão geral */
+
+h2~p{
+    color: blue;
+}

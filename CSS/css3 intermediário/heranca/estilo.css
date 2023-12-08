@@ -1,0 +1,41 @@
+/* Quando há seletores iguais, o "!important" irá definir a prioridade 
+p{
+    color: red !important;
+}
+
+p{
+    color: blue;
+}
+
+Se houver um seletor mais geral que um outro seletor, o seletor mais específico será priorizado
+
+*{
+    color: red;
+}
+
+h1{             
+    color: blue;     <----- será priorizado
+}
+
+//////////////////////////////////
+
+h1{
+    color: blue;
+}
+
+h1.verde{
+    color: green;   <----- será priorizado
+}
+
+/////////////////////////////////
+
+h1.verde {
+    color: green;
+}
+
+h1#amarelo {
+    color: yellow;   <----- será priorizado
+}
+
+
+*/
