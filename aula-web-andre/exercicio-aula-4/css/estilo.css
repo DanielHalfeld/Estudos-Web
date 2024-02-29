@@ -1,0 +1,20 @@
+#sacola{
+    display: flex;
+    justify-content: end;
+}
+
+#lat-dir{
+    margin-left: auto;
+    align-self: last baseline;
+}
+
+#lista{
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav{
+    display: inline;
+    padding: 8px;
+}
