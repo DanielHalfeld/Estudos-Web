@@ -18,9 +18,11 @@
     <button onclick="executar()">Clique Aqui</button>
 
     <script>
-        const executar = function(){
-            let obj1 = document.querySelector('li.primeiro')
-            obj1.classList.add("destaque")
+        function executar(){
+            const obj = document.querySelector('li.primeiro')
+            obj.innerHTML = "TESTE"
+            obj.classList.remove('primeiro')
+            obj.classList.add('destaque')
         }
     </script>
 </body>
