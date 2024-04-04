@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +15,38 @@
         <li>Item 2</li>
     </ul>
 
+    <ul>
+        <li class="primeiro">Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <input type="text" name="nome">
+    <input type="text" name="sobrenome">
+
     <button onclick="executar()">Clique Aqui</button>
 
     <script>
-        const obj = document.getElementsByTagName('div')
+        /*const colecao = document.getElementsByTagName('li')
+        for(let i=0; i < colecao.length; i++){
+            console.log(colecao[i].textContent)
+        }
+        const lista = Array.from(colecao)
+        const funcao = function(item, i){
+            console.log(item)
+        }
+        lista.forEach(funcao)*/
+        //const obj = document.getElementsByClassName('destaque')
+        //const obj = document.getElementsByName('nome')
+
+        function executar(){
+            const obj = document.querySelectorAll('li.primeiro')
+            for(let i=0; i < obj.length; i++){
+            obj[i]. innerHTML = "TESTE"
+            obj[i].classList.remove('primeiro')
+            obj[i].classList.add('destaque')
+            }
+        }
+    
     </script>
 </body>
 </html>
