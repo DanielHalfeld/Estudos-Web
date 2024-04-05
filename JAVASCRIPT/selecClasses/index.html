@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span> Daniel Cerqueira </span>
+
+    <button onclick="executar()">Clique aqui</button>
+
+    <script>
+        
+        function executar(){
+            const obj = document.querySelector('span')
+            const classes = obj.classList
+
+            //console.log(classes.contains('vermelho')) -> retorna 'true' se existir a classe
+            //classes.add('laranja', 'texto')
+            //classes.remove('vermelho')
+            //classes.toggle('vermelho')
+            obj.className = 'vermelho texto'
+        }
+
+        
+
+    </script>
+</body>
+</html>
