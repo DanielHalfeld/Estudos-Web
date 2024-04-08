@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="conteudo"> Conteúdo </div>
+
+    <ul id="itens">
+        <li>Pedro</li>
+        <li>Ana</li>
+    </ul>
+
+
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="remover()">Remover</button>    
+
+    <script>
+        //const obj = document.getElementById('conteudo')
+        //obj.textContent = 'Daniel'
+        //obj.innerHTML = '<p style='color:red'>Daniel</p>'
+        const ul = document.getElementById('itens')
+        const li = document.createElement('li')
+        
+        function adicionar(){
+            //ul.appendChild(li)
+            //ul.insertBefore(li, ul.children[0]) -> inserir no início
+            li.textContent = 'Lucas'
+            const item = li.cloneNode(true)
+            ul.appendChild(item)
+        }
+
+        function remover(){
+            ul.lastChild.remove()
+        }
+    </script>
+</body>
+</html>
