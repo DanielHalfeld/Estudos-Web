@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="senha" placeholder="Senha">
+
+    <script>
+
+        function entrar(){
+            console.log('entrou')
+        }
+
+        function sair(){
+            console.log('saiu')
+            obj.focus()
+        }
+
+        const obj = document.getElementById('nome')
+        const obj2 = document.getElementById('senha')
+        
+        obj.addEventListener('focus', entrar)
+        obj.addEventListener('blur', sair)
+        
+
+</script>
+</body>
+</html>
