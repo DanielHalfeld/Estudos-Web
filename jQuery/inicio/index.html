@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Configurando e vendo na prática</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+
+    <ul>
+        <li>Lucas</li>
+        <li>Amanda</li>
+        <li>Cintia</li>
+    </ul>
+
+    <hr>
+
+    <div id="conteudo">
+
+    </div>
+
+    <button acao-clique>Deletar paragrafo</button>
+
+    <button acao2-clique>Esconder/aparecer lista</button>
+
+    <script>
+        let obj = $('p')
+        
+
+        let itens = $('ul').text()
+       $('#conteudo').text( itens )
+
+       
+       $('[acao-clique]').click(function(){
+        $('p').addClass('destaque')
+        obj.hide(5000)
+       })
+
+       $('[acao2-clique]').click(function(){
+        $('ul').toggle()
+       })
+    </script>
+</body>
+</html>
