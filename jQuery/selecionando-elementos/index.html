@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 style="display: none;">Configurando e vendo na prática</h1>
+
+    <div id="area">
+        <h1>Selecionando elementos</h1>
+        <h3>Selecionando filtros</h3>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+
+    <ul id="lista">
+        <li>Lucas</li>
+        <li ativo='sim'>Amanda</li>
+        <li>Cintia</li>
+    </ul>
+
+    <ul>
+        <li>Lucas</li>
+        <li>Amanda</li>
+        <li>Cintia</li>
+    </ul>
+
+    <hr>
+
+    <div id="conteudo" class="content">
+        Conteúdo
+    </div>
+
+    <br>
+    <button acao-clique>Clique</button>
+
+    <button acao-mostrar>Mostrar</button>
+
+    
+    <hr><br>
+
+    <form id="cadastro">
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Senha">
+        <hr>
+        <input type="radio">
+        <input type="checkbox">
+        <hr>
+        <input type="submit" value="Salvar">
+    </form>
+
+    <script>
+        
+        //const obj = jQuery('ul li')
+
+        $('[acao-clique]').click(function(){
+            //$('#conteudo').addClass('content')
+            //$('#conteudo').removeClass('content')
+            //$('ul li').addClass('destaque')
+            //$('ul#lista li').addClass('destaque')
+            //$('[acao-clique]').addClass('destaque')
+            $('[ativo="sim"]').addClass('destaque')
+
+            //encadeamento
+            $('h1')
+                .css('color','white')
+                .addClass('destaque')
+        })
+
+        //seletores exclusivos jQuery (filtros)
+
+        //$('ul li:first').addClass('destaque')
+        //$('ul li:last').addClass('destaque')
+        //$('ul li:eq(3)').addClass('destaque')
+        //$('ul li:odd').addClass('destaque') -> pares
+        //$('ul li:gt(1)').addClass('destaque') -> greater than
+        //$('ul li:lt(3)').addClass('destaque') -> less than
+        //$(':header').addClass('destaque')
+        //$('#area :header').addClass('destaque')
+        $('ul li:contains("Cintia")').addClass('destaque')
+
+        $('[acao-mostrar]').click(function(){
+            $('h1:hidden').show()
+        })
+
+        //filtros de formulário
+
+        $('[value="Salvar"]').click(function(){
+            //$(':input').hide()
+            $(':text').toggle()
+            $(':password').toggle()
+            //$(':radio').toggle()
+            //$(':checkbox').toggle()
+            //$(':submit').toggle()
+            event.preventDefault()
+        })
+
+    </script>
+</body>
+</html>
