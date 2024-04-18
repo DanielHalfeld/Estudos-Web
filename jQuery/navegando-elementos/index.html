@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Navegando</h1>
+
+    <h3>Selecionando elementos</h3>
+    <h5>Selecionando filtros</h5>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+
+    <ul id="lista" quantidade="3">
+        <li>Lucas</li>
+        <li selecionado>Amanda</li>
+        <li>Cintia</li>
+    </ul>
+
+    <hr>
+
+    <div id="conteudo" class="content">
+        <span><strong>Conteúdo</strong></span>
+    </div>
+
+    
+    <button acao-clique>Clique</button> 
+
+    <script>
+        $('[acao-clique]').click(function(){
+            //$('span').parent().addClass('destaque') -> seleciona a DIV pai
+            //$('span').parents().addClass('destaque') -> seleciona todos os pais
+            //$('li:first').next().addClass('destaque')
+            //$('li:last').prev().addClass('destaque')
+            //$('h1').next().addClass('destaque')
+            //$('li:first').nextAll().addClass('destaque')
+            //$('li:last').prevAll().addClass('destaque')
+            //$('[selecionado]').siblings().addClass('destaque')
+            //$('span').parent().next().addClass('destaque')
+            //$('span').parent().prev().addClass('destaque')
+            //$('ul').children().addClass('destaque')
+            //$('#conteudo').children().addClass('destaque')
+            //$('body').find('strong').addClass('destaque')
+            $('li').each(function(i,elemento){
+                $(elemento).addClass('destaque')
+            })
+        })
+    </script>
+</body>
+</html>
