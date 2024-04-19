@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Manipulando</h1>
+    <h2>Navegando</h1>
+    <h3>Selecionando elementos</h3>
+    <h5>Selecionando filtros</h5>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+
+    <ul id="lista" quantidade="3">
+        <li>Lucas</li>
+        <li>Amanda</li>
+        <li>Cintia</li>
+    </ul>
+
+    <hr>
+
+    <div id="conteudo" class="content">
+        <span><strong>Conteúdo 1</strong></span>
+        <span><strong>Conteúdo 2</strong></span>
+    </div>
+
+    
+    <button acao-clique>Clique</button> 
+
+    <script>
+        $('[acao-clique]').click(function(){
+            /* Inserindo elementos */
+
+            /* $('#conteudo').after('<strong> Daniel</strong>')
+            $('#conteudo').before('<strong>Daniel </strong>') */
+            /* $('<strong> Daniel</strong>').insertAfter('#conteudo')
+            $('<strong>Daniel </strong>').insertBefore('#conteudo') */
+
+            /* $('#conteudo').prepend('Antes')
+            $('#conteudo').append('Depois')
+            $('#conteudo').prepend('Antes').append('Depois') */
+            /* $('<strong>Depois</strong>').appendTo('#conteudo')
+            $('<strong>Antes</strong>').prependTo('#conteudo') */
+            /* $('#conteudo').append(['DEPOIS1','DEPOIS2','DEPOIS3'])
+            $('#conteudo').prepend(['ANTES1','ANTES2','ANTES3']) */
+
+            /* REMOVER, MOVER, COLAR */
+
+            //$('p').remove()
+            /* const retorno = $('h1').detach()
+            $('#conteudo').before(retorno) */
+            /* const retorno = $('h1').clone()
+            $('#conteudo').before(retorno) */
+
+            /* Criando elementos e envolvendo */
+
+            /* let item = $('<li>').append('Daniel')
+            $('ul').append(item) */
+
+            //$('#conteudo').wrap('<div>')
+            //$('p').wrapAll('<div>')
+            //$('span').unwrap()
+            //$('p').empty()
+
+            /* $('#conteudo').replaceWith('<span>j</span>')
+            $('<span>j</span>').replaceAll('#conteudo') */
+
+            $('p').replaceWith(function(){
+                const texto = $(this).text()
+                return $('<span>').text(texto)
+            })
+        })
+    </script>
+</body>
+</html>
