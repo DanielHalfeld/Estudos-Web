@@ -1,0 +1,13 @@
+.destaque{
+    font-style: italic;
+    font-size: small;
+}
+
+p{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+hr{
+    border: 50px solid gray;
+}
