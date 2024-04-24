@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1>Eventos</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis hic dignissimos dolore ipsum deleniti eveniet voluptates, doloremque asperiores earum alias similique. Odit fugiat accusantium quos sint assumenda laudantium laboriosam magnam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, enim minus officiis nulla id, animi quisquam ipsam culpa, nostrum voluptatum tenetur blanditiis tempore perspiciatis eos deserunt fugiat dignissimos asperiores.</p>
+
+    <hr>
+
+    <div id="conteudo">
+        <span>Conteudo 1</span>
+        <span>Conteudo 2</span>
+    </div>
+
+    <h2>Exibir/ocultar</h2>
+
+    <br>
+    <button acao-clique>Clique</button> 
+
+    <script>
+        /* $('p:first'). |click ou dblclick| (function(){
+            $('p:first').addClass('destaque')
+        }) */
+        function executar(e){
+            $('h2').toggle()
+            
+            $('[acao-clique]').off('click', executar)
+            //console.log(e.type)
+            //console.log(e.target)
+            //console.log(e.clientY, e.pageY) - clientY= distancia em pixels o começo da area visivel até o elemento em questao | pageY= distancia do começo da pagina até o elemento em questão
+        }
+
+        const evento = $('[acao-clique]').on('click dblclick', executar)
+    </script>
+</body>
+</html>
