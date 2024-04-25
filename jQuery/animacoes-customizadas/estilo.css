@@ -1,0 +1,17 @@
+*{
+    font-size: 30px;
+}
+
+#conteudo{
+    position: absolute;
+    /* top: 50px; */
+    border: 1px solid #9c6a00;
+    background-color: #ffae00;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+.destaque{
+    border: 1px solid red;
+}
