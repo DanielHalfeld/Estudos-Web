@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+</head>
+<body>
+    
+    <p id="nome"></p>
+    <p id="ano"></p>
+
+    <button id="enviar" type="submit">Enviar</button>
+
+    <script>
+        class Car {
+            constructor(nome, ano) {
+                this.nome = nome;
+                this.ano = ano;
+            }
+            idade(x){
+                return x - this.ano;
+            }
+        }
+        const date = new Date();
+        let ano = date.getFullYear();
+
+        const myCar = new Car('Ford', 2014);
+        document.querySelector('#nome').innerHTML = myCar.nome
+        document.querySelector('#ano').innerHTML = myCar.ano
+        document.getElementById('demo').innerHTML = 'My car is' + myCar.age(ano) + 'years old.';
+    
+    </script>
+
+</body>
+</html>
