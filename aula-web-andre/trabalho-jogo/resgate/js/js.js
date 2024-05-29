@@ -172,14 +172,14 @@ function start() { // inicio start()
       // jogador com o amigo
       if (colisao5.length > 0) {
           salvos++;
-          reposicionaAmigo();
           $("#amigo").remove();
+          reposicionaAmigo();
       }
       if (colisao6.length > 0) {
         perdidos++;
         amigoX = parseInt($("#amigo").css("left"));
         amigoY = parseInt($("#amigo").css("top"));
-        explosao3(amigoX, amigoY);
+        /* explosao3(amigoX, amigoY); */
         $("#amigo").remove();
         reposicionaAmigo();
       }
@@ -212,7 +212,7 @@ function start() { // inicio start()
           tempoExplosao2 = null;
       }
   } // fim da explosao2
-  function explosao3(amigoX, amigoY) {
+  /* function explosao3(amigoX, amigoY) {
     $("#fundoGame").append("<div id='explosao3' class='anima4'></div>");
     $("#explosao3").css("top",amigoY);
     $("#explosao3").css("left",amigoX);
@@ -221,8 +221,7 @@ function start() { // inicio start()
       $("#explosao3").remove();
       window.clearInterval(tempoExplosao3);
       tempoExplosao3 = null;
-    }
-  }
+    } */
   function placar() {
     $("#placar").html("<h2>Pontos: " + pontos + "Salvos: " + salvos + "Perdidos: " + perdidos + "</h2>")
   }
@@ -251,23 +250,31 @@ function start() { // inicio start()
 
   function energia() {
     if (energiaAtual == 3) {
-      $("#energia").css("background-image", "url(imgs/energia3.jpg)");
+      $("#energia").css("background-image", "url(imgs/energia3.png)");
+      $("#energia").css("background-repeat", "no-repeat");
+
     }
     if (energiaAtual == 2) {
-      $("#energia").css("background-image", "url(imgs/energia2.jpg)");
+      $("#energia").css("background-image", "url(imgs/energia2.png)");
+      $("#energia").css("background-repeat", "no-repeat");
+
     }
     if (energiaAtual == 1) {
-      $("#energia").css("background-image", "url(imgs/energia1.jpg)");
+      $("#energia").css("background-image", "url(imgs/energia1.png)");
+      $("#energia").css("background-repeat", "no-repeat");
+
     }
     if (energiaAtual == 0) {
-      $("#energia").css("background-image", "url(imgs/energia0.jpg)");
+      $("#energia").css("background-image", "url(imgs/energia0.png)");
+      $("#energia").css("background-repeat", "no-repeat");
+
       gameOver();
     }
   }
   function gameOver() {
     fimdejogo = true;
-    musica.pause();
-    somGameover.play();
+    /* musica.pause();
+    somGameover.play(); */
     window.clearInterval(jogo.timer);
     jogo.timer = null;
     $("#jogador").remove();
@@ -277,9 +284,11 @@ function start() { // inicio start()
     $("#fundoGame").append("<div id='fim'></div>");
     $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
   }
-  function reiniciaJogo() {
-    somGameover.pause();
+
+} // fim start()
+
+function reiniciaJogo() {
+    /* somGameover.pause(); */
     $("#fim").remove();
     start();
   }
-} // fim start()
